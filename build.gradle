@@ -29,6 +29,15 @@ version = '1.0.7'
 description = 'Shimeji-ee'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
+jar {
+  manifest {
+    attributes(
+      'Class-Path': './ img/ conf/ ./lib/jna.jar ./lib/examples.jar ./lib/Absol',
+      'Main-Class': 'com.group_finity.mascot.Main'
+    )
+  }
+}
+
 publishing {
     publications {
         maven(MavenPublication) {

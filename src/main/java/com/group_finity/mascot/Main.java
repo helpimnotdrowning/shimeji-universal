@@ -43,15 +43,15 @@ public class Main {
     private static Platform platform;
     private static JFrame frame = new javax.swing.JFrame();
 
-    static {
+    /*static {
         try {
-            LogManager.getLogManager().readConfiguration(Main.class.getResourceAsStream("/logging.properties"));
+            LogManager.getLogManager().readConfiguration(Main.class.getResourceAsStream("./conf/logging.properties"));
         } catch (final SecurityException e) {
             e.printStackTrace();
         } catch (final IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     private final Manager manager = new Manager();
     private ArrayList<String> imageSets = new ArrayList<String>();
